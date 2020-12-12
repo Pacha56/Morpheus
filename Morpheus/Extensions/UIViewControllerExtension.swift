@@ -17,4 +17,16 @@ extension UIViewController
 
         present(alert, animated: true)
     }
+    
+    func showLogin(){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "loginVC") as? UINavigationController else { return }
+        
+        UIApplication.shared.windows.first?.rootViewController = vc
+    }
+    
+    func showProfiles(){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "profilesVC") as? UINavigationController else { return }
+        
+        UIApplication.shared.windows.first?.rootViewController = vc
+    }
 }

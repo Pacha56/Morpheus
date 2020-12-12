@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00D63BD25844AA90035E3FB /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D63BC25844AA90035E3FB /* InitialViewController.swift */; };
 		A022950B2582CC280040C7A5 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022950A2582CC280040C7A5 /* AuthToken.swift */; };
 		A022950F2582DF130040C7A5 /* AttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022950E2582DF130040C7A5 /* AttributedStringExtension.swift */; };
 		A02295122582E12E0040C7A5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02295112582E12E0040C7A5 /* UIButtonExtension.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		49B7FC3406848A47D9063008 /* Pods_Morpheus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morpheus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		671FB64182204453B5BC7405 /* Pods-Morpheus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morpheus.debug.xcconfig"; path = "Target Support Files/Pods-Morpheus/Pods-Morpheus.debug.xcconfig"; sourceTree = "<group>"; };
+		A00D63BC25844AA90035E3FB /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		A022950A2582CC280040C7A5 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		A022950E2582DF130040C7A5 /* AttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringExtension.swift; sourceTree = "<group>"; };
 		A02295112582E12E0040C7A5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				A0C5085F2582C7C500AE3C75 /* ViewController.swift */,
 				A02295182582E3C50040C7A5 /* ProfilesViewController.swift */,
+				A00D63BC25844AA90035E3FB /* InitialViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				A022950B2582CC280040C7A5 /* AuthToken.swift in Sources */,
 				A0229528258411200040C7A5 /* Header.swift in Sources */,
 				A0C5085E2582C7C500AE3C75 /* SceneDelegate.swift in Sources */,
+				A00D63BD25844AA90035E3FB /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
