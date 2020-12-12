@@ -22,7 +22,6 @@ class ProfileTableViewCell: UITableViewCell
         didSet {
             guard let currentProfile = profile else { return }
             
-            
             nameLabel.text = currentProfile.name
             distanceLabel.text = currentProfile.distanceInMiles
             ratingLabel.text = "(\(currentProfile.numRatings))"

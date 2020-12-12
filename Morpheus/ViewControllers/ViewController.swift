@@ -16,13 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var errorLabel: UILabel!
     
-    private let sessionProvider = URLSessionProvider()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        usernameTextField.text = "user@morpheustest.com"
-        passwordTextField.text = "Password1"
         
         setupView()
     }
