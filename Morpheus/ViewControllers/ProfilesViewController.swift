@@ -10,6 +10,7 @@ import UIKit
 class ProfilesViewController: UIViewController
 {
     @IBOutlet weak var profilesTableView: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var tableViewDatasource: ProfilesTableViewDataSource?
     
@@ -45,16 +46,19 @@ class ProfilesViewController: UIViewController
     {
         ServiceManager.shared.getProfiles() { result, error  in
             
-            if let profiles = result
-            {
-                self.tableViewDatasource?.profiles = profiles.sorted { $0.starLevel > $1.starLevel }
-                DispatchQueue.main.async {
+            DispatchQueue.main.async {
+                self.spinner.stopAnimating();
+                
+                if let profiles = result
+                {
+                    self.tableViewDatasource?.profiles = profiles.sorted { $0.starLevel > $1.starLevel }
+                    
                     self.profilesTableView.reloadData()
                 }
-            }
-            else
-            {
-                
+                else
+                {
+                    self.showAlert(title: "Error", message: error ?? "Couldn't load profiles")
+                }
             }
         }
     }

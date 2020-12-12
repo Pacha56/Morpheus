@@ -282,19 +282,26 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="zjG-ug-LcL">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.17449268530000001" green="0.0280004812" blue="0.59274475660000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gOb-wT-C25"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="gOb-wT-C25" firstAttribute="trailing" secondItem="AFL-7x-YB3" secondAttribute="trailing" id="5f8-Za-ZrO"/>
                             <constraint firstItem="AFL-7x-YB3" firstAttribute="leading" secondItem="gOb-wT-C25" secondAttribute="leading" id="8ql-yO-gKX"/>
+                            <constraint firstItem="zjG-ug-LcL" firstAttribute="centerX" secondItem="Dhb-PV-JBM" secondAttribute="centerX" id="RAa-SU-L3K"/>
                             <constraint firstItem="AFL-7x-YB3" firstAttribute="top" secondItem="gOb-wT-C25" secondAttribute="top" constant="20" id="W0h-1L-cRm"/>
+                            <constraint firstItem="zjG-ug-LcL" firstAttribute="centerY" secondItem="Dhb-PV-JBM" secondAttribute="centerY" id="cvY-Rb-KaB"/>
                             <constraint firstItem="gOb-wT-C25" firstAttribute="bottom" secondItem="AFL-7x-YB3" secondAttribute="bottom" id="xWs-wX-clu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BQk-9v-dBy"/>
                     <connections>
                         <outlet property="profilesTableView" destination="AFL-7x-YB3" id="QZS-Aw-Ng3"/>
+                        <outlet property="spinner" destination="zjG-ug-LcL" id="iPR-y6-qa9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJ1-aC-j21" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
